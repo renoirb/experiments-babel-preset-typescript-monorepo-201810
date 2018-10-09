@@ -1,0 +1,9 @@
+{
+  "name": "@mylib/main",
+  "description": "Library Entry Point",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "dependencies": {
+    "@mylib/randomizer": "*"
+  }
+}

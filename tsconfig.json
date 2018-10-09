@@ -1,0 +1,11 @@
+{
+  "extends": "./build/config/tsconfig.common.json",
+  "include": ["modules/**/*.ts"],
+  "exclude": ["node_modules/**", "modules/*/node_modules/**", "**/*.d.ts"],
+  "compilerOptions": {
+    "baseUrl": "./modules",
+    "paths": {
+      "@modules/*": ["./modules/*/src"]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@mylib/data-model",
+  "description": "Data models for things such as services, statuses, etc.",
+  "copyright.owner": "CGI Group Inc.",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-typescript": "^7.0.0",
+    "typescript": "^3.1.1"
+  },
+  "scripts": {
+    "tsc": "tsc --noEmit",
+    "tsc:watch": "yarn run tsc -- --watch",
+    "build": "yarn run build:types && yarn run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline --ignore **/__tests__"
+  }
+}

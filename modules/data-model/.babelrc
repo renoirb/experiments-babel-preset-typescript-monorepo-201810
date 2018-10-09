@@ -1,0 +1,5 @@
+{
+  "presets": [
+    ["../../build/config/babel.common.js"]
+  ]
+}

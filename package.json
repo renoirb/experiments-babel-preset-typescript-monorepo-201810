@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "license": "UNLICENSED",
+  "workspaces": [
+    "modules/*"
+  ],
+  "engines": {
+    "node": ">=10",
+    "yarn": ">=1.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-async-generator-functions": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-typescript": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "@types/jest": "^23.3.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "bili": "^3.1.2",
+    "lerna": "^3.4.0",
+    "prettier": "^1.14.3",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.1.1"
+  },
+  "scripts": {
+    "prebootstrap": "yarn",
+    "bootstrap": "lerna bootstrap",
+    "lerna": "lerna",
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "outdated": "yarn outdated --depth 0 && lerna exec --no-bail \"yarn outdated --depth 0\"",
+    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('frontend must be installed with Yarn: https://yarnpkg.com/')\""
+  }
+}
