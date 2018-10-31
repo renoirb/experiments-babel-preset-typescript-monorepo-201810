@@ -2,7 +2,10 @@
   "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "../../build/config/tsconfig.build.json",
   "compilerOptions": {
-    "rootDir": "."
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "rootDir": "./src"
   },
-  "include": ["index.ts", "src", "test"]
+  "include": ["./src/**/*.ts"],
+  "exclude": ["**/*.test.ts"]
 }

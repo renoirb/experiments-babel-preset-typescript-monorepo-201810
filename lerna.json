@@ -1,6 +1,11 @@
 {
   "version": "0.1.0",
-  "packages": ["modules/*"],
+  "packages": ["packages/*"],
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "skipNpm": true
+    }
+  }
 }

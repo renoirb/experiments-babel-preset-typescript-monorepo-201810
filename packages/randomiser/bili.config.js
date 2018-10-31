@@ -1,7 +1,7 @@
 module.exports = {
     moduleName: 'randomizer',
     name: 'index',
-    outDir: 'lib',
+    outDir: 'dist',
     format: [
         'cjs',
         'umd'

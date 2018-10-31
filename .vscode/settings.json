@@ -3,22 +3,17 @@
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": true,
   "editor.formatOnSave": true,
-  "[html]": {
-    "editor.formatOnSave": false
-  },
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.git": true,
-    ".nyc_output": true,
     "coverage": true,
-    "modules/*/lib": true,
-    "modules/*/api-docs": true,
-    "examples/*/lib": true,
+    "packages/*/dist": true,
+    "packages/*/api-docs": true,
+    "examples/*/dist": true,
     "**/.sandbox": true
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "tslint.ignoreDefinitionFiles": true,
-  "tslint.nodePath": "./packages/build/node_modules",
-  "typescript.tsdk": "./packages/build/node_modules/typescript/lib"
+  "eslint.enable": false
 }

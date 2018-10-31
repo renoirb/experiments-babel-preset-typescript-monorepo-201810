@@ -1,8 +1,11 @@
 {
+  "name": "huddle",
+  "description": "noun assemblage (of JavaScript/TypeScript code), crowded, often (but ideally not) disorganized",
   "private": true,
   "license": "UNLICENSED",
+  "author": "CGI Group Inc. in GTO",
   "workspaces": [
-    "modules/*"
+    "packages/*"
   ],
   "engines": {
     "node": ">=10",

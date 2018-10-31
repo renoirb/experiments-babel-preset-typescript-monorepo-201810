@@ -1,10 +1,10 @@
 {
-  "name": "@mylib/randomiser",
+  "name": "@huddle/randomiser",
   "license": "UNLICENSED",
-  "main": "lib/index.cjs.js",
-  "module": "lib/index.es.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
   "files": [
-    "lib"
+    "dist"
   ],
   "dependencies": {
     "@babel/runtime": "^7.0.0"

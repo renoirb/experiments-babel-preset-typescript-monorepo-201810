@@ -1,6 +1,6 @@
 // NoOp
 
-const randomNumber = require('@mylib/randomizer')
+const randomNumber = require('@huddle/randomizer')
 
 module.exports = {
   randomizer: randomNumber.default || randomNumber

@@ -1,9 +1,11 @@
 {
-  "name": "@mylib/date-epoch",
-  "description": "Date internal representation utilities using Numbers of seconds since January 1st 1970 (a.k.a. Epoch)",
+  "name": "@huddle/data-model",
+  "version": "0.1.0",
+  "description": "Data models for things such as services, statuses, etc.",
+  "copyright.owner": "CGI Group Inc.",
   "license": "UNLICENSED",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@babel/runtime": "^7.0.0"
   },
@@ -19,6 +21,6 @@
     "tsc:watch": "yarn run tsc -- --watch",
     "build": "yarn run build:types && yarn run build:js",
     "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline --ignore **/__tests__"
+    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline --ignore **/__tests__"
   }
 }

@@ -1,9 +1,9 @@
 {
-  "name": "@mylib/main",
+  "name": "@huddle/main",
   "description": "Library Entry Point",
   "license": "UNLICENSED",
   "main": "index.js",
   "dependencies": {
-    "@mylib/randomizer": "*"
+    "@huddle/randomizer": "*"
   }
 }

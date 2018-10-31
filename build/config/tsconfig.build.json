@@ -1,5 +1,6 @@
 {
   "extends": "./tsconfig.common.json",
+  "compileOnSave": false,
   "compilerOptions": {
     "rootDir": "."
   },

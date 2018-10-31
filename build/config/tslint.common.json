@@ -1,6 +1,5 @@
 {
   "extends": ["tslint:latest", "tslint-config-prettier", "tslint-immutable"],
-
   // See https://palantir.github.io/tslint/rules/
   "rules": {
     // These rules find errors related to TypeScript features.
@@ -8,27 +7,22 @@
     "prefer-for-of": true,
     "unified-signatures": true,
     "no-any": true,
-
     "interface-name": [true, "never-prefix"],
     // TODO: allow devDependencies only in **/*.spec.ts files:
     // waiting on https://github.com/palantir/tslint/pull/3708
     "no-implicit-dependencies": [true, "dev"],
-
     // These rules catch common errors in JS programming or otherwise
     // confusing constructs that are prone to producing bugs.
-
     "label-position": true,
     "no-arg": true,
     "no-construct": true,
     "no-duplicate-variable": true,
-
     "no-invalid-this": true,
     "no-misused-new": true,
     "no-shadowed-variable": true,
     "no-string-throw": true,
     "no-unused-expression": true,
     "triple-equals": [true, "allow-null-check", "allow-undefined-check"],
-
     /* tslint-immutable rules */
     // Recommended built-in rules
     "no-var-keyword": true,
@@ -41,14 +35,15 @@
     "no-object-mutation": true,
     "no-delete": true,
     "no-method-signature": true,
-
     // Functional style rules
     "no-this": true,
     "no-class": true,
     "no-mixed-interface": true,
     "no-expression-statement": [
       true,
-      { "ignore-prefix": ["console.", "process.exit"] }
+      {
+        "ignore-prefix": ["console.", "process.exit"]
+      }
     ],
     "no-if-statement": true
     /* end tslint-immutable rules */

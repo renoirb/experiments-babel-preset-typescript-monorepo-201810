@@ -9,7 +9,7 @@ export class ServiceModelHelper {
   }
 }
 
-export default class ServiceModelCollection {
+export class ServiceModelCollection {
   items: ServiceModel[] = []
   constructor(seed = []) {
     for (const i of seed) {
