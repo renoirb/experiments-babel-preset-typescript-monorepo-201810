@@ -18,6 +18,14 @@ Objectives:
 [babel-preset-env]: https://babeljs.io/docs/en/babel-preset-env
 [esnext-modules]: https://babeljs.io/blog/2018/06/26/on-consuming-and-publishing-es2015+-packages
 
+## How Do I?
+
+### Add a dependency to a specific module?
+
+Let's say we want to add **bili-babel** to module in `packages/randomiser/` as a development dependency.
+
+    yarn lerna add bili-babel --scope=@huddle/randomiser --dev
+
 ## Inspired by..
 
 ### Other projects
@@ -29,9 +37,11 @@ Objectives:
 - [transitive-bullsh\*\*/npm-es-modules](https://github.com/transitive-bullshit/npm-es-modules)
 - [retextjs/retext](https://github.com/retextjs/retext)
 - [Turfjs/turf](https://github.com/Turfjs/turf/blob/master/packages/turf/index.mjs)
+- [Shopify/quilt](https://github.com/Shopify/quilt) and its utility package [Shopify/javascript-utilities](https://github.com/Shopify/javascript-utilities)
 
 ### Reading materials
 
+- [Create a JavaScript library using TypeScript Jest and Rollup](https://haodong.io/create-a-javascript-library-using-typescript-jest-and-rollup/)
 - [How to Create and Publish an NPM module in TypeScript](https://codeburst.io/https-chidume-nnamdi-com-npm-module-in-typescript-12b3b22f0724)
 - [Avoid this gotcha when code-splitting with TypeScript and Webpack](https://davidea.st/articles/webpack-typescript-code-split-wont-work) (Because we will eventually have this code-split by WebPack)
 - [Five tips I wish I knew when I started with Typescript](https://codeburst.io/five-tips-i-wish-i-knew-when-i-started-with-typescript-c9e8609029db)

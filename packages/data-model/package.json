@@ -14,13 +14,13 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-typescript": "^7.0.0",
-    "typescript": "^3.1.1"
+    "typescript": "^3.1.4"
   },
   "scripts": {
     "tsc": "tsc --noEmit",
     "tsc:watch": "yarn run tsc -- --watch",
     "build": "yarn run build:types && yarn run build:js",
     "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline --ignore **/__tests__"
+    "build:js": "babel src --out-dir dist --extensions \".ts\" --source-maps inline --ignore **/__tests__"
   }
 }

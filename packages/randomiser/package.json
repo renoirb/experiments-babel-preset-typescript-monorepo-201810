@@ -1,5 +1,6 @@
 {
   "name": "@huddle/randomiser",
+  "version": "0.1.0",
   "license": "UNLICENSED",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -10,9 +11,10 @@
     "@babel/runtime": "^7.0.0"
   },
   "devDependencies": {
-    "bili": "^3.1.2",
+    "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0"
+    "@babel/preset-env": "^7.0.0",
+    "bili": "^3.1.2"
   },
   "scripts": {
     "build": "bili --format cjs,es"

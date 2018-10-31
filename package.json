@@ -23,16 +23,17 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-typescript": "^7.0.0",
     "@babel/register": "^7.0.0",
-    "@types/jest": "^23.3.3",
+    "@types/jest": "^23.3.9",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "babel-plugin-module-resolver": "^3.1.1",
     "bili": "^3.1.2",
-    "lerna": "^3.4.0",
+    "lerna": "^3.4.3",
     "prettier": "^1.14.3",
     "tslint": "^5.11.0",
     "tslint-config-standard": "^8.0.1",
-    "typescript": "^3.1.1"
+    "typescript": "^3.1.1",
+    "jest": "^23.6.0"
   },
   "scripts": {
     "prebootstrap": "yarn",

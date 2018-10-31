@@ -1,7 +1,7 @@
 {
-  "name": "@huddle/date-epoch",
+  "name": "@huddle/constraint",
   "version": "1.0.0",
-  "description": "Date internal representation utilities using Numbers of seconds since January 1st 1970 (a.k.a. Epoch)",
+  "description": "String notation to describe how we want an API to return data only with matching criteria",
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,15 +13,16 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-typescript": "^7.0.0",
+    "@types/jest": "^23.3.9",
     "typescript": "^3.1.4"
   },
   "scripts": {
     "prepublishOnly": "yarn run build",
     "tsc": "tsc --noEmit",
     "tsc:watch": "yarn run tsc -- --watch",
-    "build": "yarn run build:types && yarn run build:js",
-    "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src --out-dir dist --extensions \".ts\" --source-maps inline --ignore **/__tests__"
+    "build": "yarn run build:js",
+    "build:js": "babel src --out-dir dist --extensions \".js\" --source-maps inline --ignore **/__tests__",
+    "test": "jest --maxWorkers=3"
   },
   "files": [
     "dist/*"

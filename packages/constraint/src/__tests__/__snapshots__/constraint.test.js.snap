@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`types/constraint Scenario 2: #fromString() Should be able to recover a workable collection of Triplet, yet #toString() return fully defined Triplets only 1`] = `
+Object {
+  "eq": Array [],
+}
+`;
+
+exports[`types/constraint Scenario 3: #setDefinition() Should be able to recover a workable collection of Triplet, yet #toString() return fully defined Triplets only 1`] = `
+Object {
+  "definition": Object {
+    "Buz": Object {
+      "eq": Array [],
+    },
+    "Foo": Object {
+      "in": Array [
+        "Bar",
+        "Baz",
+      ],
+    },
+  },
+}
+`;
+
+exports[`types/constraint Scenario 13: #toJSON() Should serialize and work with JSON.stringify(), it also should give back only "Foo_$in_$Bar|Baz" out of bogus "Foo_$in_$Bar|  |Baz| ,Bogus|things,Fee_#Fhi_$Foe" 1`] = `"{\\"definition\\":{\\"Foo\\":{\\"in\\":[\\"Bar\\",\\"Baz\\"]}}}"`;

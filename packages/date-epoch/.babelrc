@@ -1,5 +1,7 @@
 {
   "presets": [
-    ["../../build/config/babel.common.js"]
+    [
+      "../../build/config/babel.common.js"
+    ]
   ]
 }
