@@ -1,6 +1,7 @@
 {
   "name": "huddle",
   "description": "noun assemblage (of JavaScript/TypeScript code), crowded, often (but ideally not) disorganized",
+  "version": "1.0.0",
   "private": true,
   "license": "UNLICENSED",
   "author": "CGI Group Inc. in GTO",
@@ -42,6 +43,7 @@
     "test": "lerna run test",
     "build": "lerna run build",
     "outdated": "yarn outdated --depth 0 && lerna exec --no-bail \"yarn outdated --depth 0\"",
-    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('frontend must be installed with Yarn: https://yarnpkg.com/')\""
+    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('frontend must be installed with Yarn: https://yarnpkg.com/')\"",
+    "prepublish": "yarn lerna run lint && yarn run build"
   }
 }

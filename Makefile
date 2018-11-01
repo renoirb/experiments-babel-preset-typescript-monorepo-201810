@@ -32,3 +32,10 @@ build: node_modules
 test: node_modules
 	$(info Run test task for each packages/*)
 	yarn lerna run test
+
+.PHONY: release
+release: node_modules
+	$(info Creating a new release)
+	yarn lerna version
+	yarn lerna publish 
+
