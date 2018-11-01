@@ -1,6 +1,6 @@
 {
   "name": "@huddle/date-epoch",
-  "version": "1.0.0",
+  "version": "0.2.0-alpha.0",
   "description": "Date internal representation utilities using Numbers of seconds since January 1st 1970 (a.k.a. Epoch)",
   "license": "UNLICENSED",
   "main": "dist/index.js",

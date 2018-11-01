@@ -1,10 +1,10 @@
 {
   "name": "@huddle/main",
-  "version": "0.1.0",
+  "version": "0.2.0-alpha.0",
   "description": "Library Entry Point",
   "license": "UNLICENSED",
   "main": "index.js",
   "dependencies": {
-    "@huddle/randomiser": "*"
+    "@huddle/randomiser": "^0.2.0-alpha.0"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@huddle/constraint",
-  "version": "1.0.0",
+  "version": "0.2.0-alpha.0",
   "description": "String notation to describe how we want an API to return data only with matching criteria",
   "license": "UNLICENSED",
   "main": "dist/index.js",
